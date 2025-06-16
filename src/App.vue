@@ -1,5 +1,5 @@
 <script setup>
-import LoginForm from '@/components/LoginForm.vue'
+import ContactForm from '@/components/ContactForm.vue'
 import { TrashIcon } from '@heroicons/vue/24/solid'
 import { ref, onMounted } from 'vue'
 
@@ -31,7 +31,7 @@ onMounted(() => {
 	<div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
 			<!-- Left: Contact Form-->
-			<LoginForm @submit-form="handleSubmit" />
+			<ContactForm @submit-form="handleSubmit" />
 			<!-- Right: Contacts List -->
 			<div class="bg-white p-8 rounded-2xl shadow-xl transition-all duration-300">
 				<h2 class="text-2xl font-semibold text-gray-800 mb-6">Contacts List</h2>
